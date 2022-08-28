@@ -52,19 +52,18 @@ inacessível.
 - E então eu dormi.
     </section>
 
-    <section class = "sect" id = "som1">
-        <p class = "inquisicao" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
+    <section class = "sect" id = "somUm">
+        <p class = "voceQuer" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
         <button id = "opcao1" class = "botao" onmouseenter = "playChuva()"> SIM </button>
-        <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()"> NÃO </button>
+        <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()" onclick="irSemchuva()""> NÃO </button>
     </section>
     
-    <p> - por três dias. 
+    <p> - por três dias. </p>
         <div id = "quadro3"></div>
-    
-        <button class = "botao"> Volte, se puder. </button>
+        <button class = "botao" id = "voltar" onclick = "voltarPrimeira()"> Volte, se puder. </button>
     </section>
     <section class = "sect" id = "cinza5">
-        <div id = "quadro4">
+        <div id = "quadroCavalos">
            <p class = "cavalos"> Às 4 da tarde em que já tinha desistido, 
 <span> Em algum lugar do meu sono e consciência, </span>
 <span> Achei cavalos, na minha mente.</span>  Azuis e negros. </p>
@@ -115,7 +114,7 @@ ao mesmo tempo.
 </section>
 <section class = "sect" id= "escolhaFinal">
     - Hoje chove?
-    <button onclick = "irBlack()"> Sim </button>
+    <button onclick = "irBlack()" onmouseenter="chuvaLonga()"> Sim </button>
     <button onclick = "irLuz()"> Não </button>
 </section>
 <section class = "sect" id="Black">
@@ -140,10 +139,16 @@ E só hoje.
 
 Conseguiria ver seus ossos por baixo da pele
 </section>
-<section id = "naoFinal">
+<section id = "opcaoDois">
     Ele mentiu?
-    <button onclick = "imagemSim"> sim </button>
-    <button onclick = "imagemNao"> não </button>
+    <button onmouseenter = "imagemSim()"> sim </button>
+    <button onmouseenter = "imagemNao()"> não </button>
+</section>
+<section id = "finalSim">
+    Se mentiu, não foi por mal.
+</section>
+<section id = "finalNao">
+    Então dá pra ver mesmo, não é?
 </section>
 <script>
 var x = document.getElementById("chuvaUm");
