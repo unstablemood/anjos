@@ -11,6 +11,14 @@
     <script src = "anjostyle.js"></script>
 </head>
 <body>
+    <audio id = "chuvaUm">
+        <source src = "Sons/chuvaCurto.mp3" type = "audio/mpeg">
+    </audio>
+
+    <audio id = "chuvaDois">
+        <source src = "Sons/chuvaLongo (2).mp3" type = "audio/mpeg"> 
+    </audio>
+
     <section class = "sect" id = "entrada" onclick="irCinza()" onkeydown="irCinza()">
         <p class = "texto" id = "textoEntrada">  Clique em qualquer lugar para prosseguir. </p>
         <p class = "texto" id = "textoEntrada1"> Ou pressione TAB e ⬇</p>
@@ -43,12 +51,14 @@ inacessível.
 
 - E então eu dormi.
     </section>
+
     <section class = "sect" id = "som1">
         <p class = "inquisicao" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
-        <button id = "opcao1" class = "botao"> SIM </button>
-        <button id = "opcao1" class = "botao"> NÃO </button>
+        <button id = "opcao1" class = "botao" onmouseenter = "playChuva()"> SIM </button>
+        <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()"> NÃO </button>
     </section>
-    - por três dias. 
+    
+    <p> - por três dias. 
         <div id = "quadro3"></div>
     
         <button class = "botao"> Volte, se puder. </button>
@@ -135,7 +145,15 @@ Conseguiria ver seus ossos por baixo da pele
     <button onclick = "imagemSim"> sim </button>
     <button onclick = "imagemNao"> não </button>
 </section>
-
+<script>
+var x = document.getElementById("chuvaUm");
+    function playChuva() { 
+    x.play(); 
+  } 
+  function pauseChuva() { 
+    x.pause(); 
+    }
+</script>
 <footer id = final> fazer tamanho 25-30vh, width100  </footer> //fazer função if hover footer visível  e tocar música
 </body>
 </html>
