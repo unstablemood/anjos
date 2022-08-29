@@ -25,7 +25,7 @@
 
     <section class = "sect" id = "entrada" onclick="irCinza()" onkeydown="irCinza()">
         <p class = "texto" id = "textoEntrada">  Clique em qualquer lugar para prosseguir. </p>
-        <p class = "texto" id = "textoEntrada1"> E pressione ⬇</p>
+        <p class = "texto" id = "textoEntrada1"> E pressione ⬇ pra descer. </p>
     </section>
     <section class = "sect" id = "cinza">
         <div id = "quadro1"> 
@@ -44,26 +44,27 @@
         <p>- Onde eu moro, a escada de madeira apodreceu. </p>
         <img src = "casa.png" id = "casaChove">
     </section>
-    <section class = "sect" id = "quatroImagens">
-        - Foi em Fevereiro, que a chuva de verão causou 
-os desabamentos.
+    <p>- Foi em Fevereiro, que a chuva de verão causou os desabamentos.</p>
+    <img src = "FUNDO2.svg" id ="fundoDoisPequeno">
+<p>- Por 3 dias, ninguém conseguia entrar ou sair, por trem.</p>
 
-- Por 3 dias, ninguém conseguia entrar ou sair, por trem.
-
-- Eu soube pelo celular que a cidade estava inundada,
+<p>- Eu soube pelo celular que a cidade estava inundada,</p>
 inacessível.
 
-- E então eu dormi.
-    </section>
+<p>- E então eu dormi.</p>
 
     <section class = "sect" id = "somUm">
         <p class = "voceQuer" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
         <button id = "opcao1" class = "botao" onmouseenter = "playChuva()"> SIM </button>
         <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()" onclick="irSemchuva()""> NÃO </button>
     </section>
+    <section class = "sect" id = "morro">
+        <img src = "FUNDO2.svg" id = "fundoDois">
+        </section>
     
     <p> - por três dias. </p>
         <div id = "quadro3"></div>
+        <img src = "Janela.png" id = "quarto">
         <button class = "botao" id = "voltar" onclick = "voltarPrimeira()"> Volte, se puder. </button>
     </section>
     <section class = "sect" id = "cinza5">
@@ -75,7 +76,7 @@ inacessível.
 <p> Achei cavalos, na minha mente.</p>
 
 <img src = "Cavalos1Transparente.png" id = "cavaloPrimeiro" class = "todososcavalos">
-Azuis e negros. </p>
+<p> Azuis e negros.</p>
 <div>
     </div>
 <img src = "Cavalos4Transparente.png" id = "cavaloTerceiro" class = "todososcavalos">  
@@ -83,27 +84,9 @@ Azuis e negros. </p>
      </section>
      <div id = "transicao"></div>
      <div id = "transicaoDois"></div>
+
     <section class = "sect" id = "azul">
-        - Isa 
-- Eu já rompi o joelho, a ligação, uma vez.
-- Mas na hora de fazer a cirurgia, não fiquei com medo
-Eu só dormi
-
-E até que...
-Em certo ponto
-Eu acordei e senti mexendo no meu joelho
-Mas não senti dor
-E dormi de novo"
-
-Esse lugar entre o sonho e acordar
-Entre o sentir e não sentir
-Sensação e dor" </section>
-    <section class = "sect" id = "interludio">
-        Interlúdio
-    
-Tenho medo 
-de que qualquer arte que eu faça, saia
-com medo (cauda de rato)
+    <img src = "ligamentoPagina.png" id = "ligamentoAzul">
     </section>
     <section class = "sect" id = "azul2">
         (cena)
@@ -116,7 +99,8 @@ Eu deveria estar fazendo meu TCC, mas passei meu tempo
 Googleando "Ancestrais de todos os peixes
 De todos
 Os peixes"
-<section>
+<section class = "cozinha" id = "cozinhadivUm">
+<img src = "pia da cozinha.png">
     - Você tá tirando foto da cozinha?
 - Sim.
 - Bom, cada louco com sua loucura.
@@ -125,6 +109,7 @@ Os peixes"
 - ... A gente não te alcança, aí.
 - ... Daí fica difícil conseguir voltar. - minha vó murmura,
 ao mesmo tempo.
+<img src = "pia da cozinha com tia.png">
 </section>
 <section class = "sect" id= "escolhaFinal">
     - Hoje chove?
@@ -165,14 +150,16 @@ E só hoje.
 Conseguiria ver seus ossos por baixo da pele
 </section>
 <section id = "opcaoDois">
-    Ele mentiu?
+    <h2 id = "inquisicaoDois">Ele mentiu?</h2>
     <button onmouseenter = "imagemSim()"> sim </button>
     <button onmouseenter = "imagemNao()"> não </button>
 </section>
 <section id = "finalSim">
+    <img src = "ImagemFinal.png" id = "rascunhoMaos">
     Se mentiu, não foi por mal.
 </section>
 <section id = "finalNao">
+    <img src = "ImagemFinalLuz.png" id = "maosLuz">
     Então dá pra ver mesmo, não é?
 </section>
 <script>
