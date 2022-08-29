@@ -11,6 +11,7 @@ html {
     --margem: 25vh;
 }
 
+
 #textoEntrada {
     margin: 0 auto;
     //display: flex;
@@ -137,11 +138,93 @@ footer {
     background-color: lightgreen;
 }
 
+#quadroCavalos {
+    background-color: rgb(212, 229, 240);
+
+}
 .cavalos {
     font-size: 3rem;
     font-family: monospace;
-    margin: auto;
+}
 
+.todososcavalos {
+    width: 100%;
+    display: flexbox;
+}
+
+#cavaloSegundo {
+    background-color: rgba(239, 253, 253, 0.959);
+}
+
+#cavaloPrimeiro {
+background-color: rgb(243, 226, 229);
+}
+
+#cavaloTerceiro {
+    background-color: khaki;
+}
+
+#transicao {
+    background-color: khaki ;
+    width: 50%;
+    height: 80px;
+    margin: 0 auto;
+    border-radius: 45%;
+    margin-top: 10px;
+}
+
+#transicaoDois {
+    margin-top: 10px;
+    background-color: rgb(203, 208, 231) ;
+    width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+
+}
+
+#azul {
+    background-color: black;
+    color:white;
+    width: 50%;
+    height: 250px;
+}
+
+#Black {
+    margin-top: 250px;
+    color: white;
+    background-color: black;
+    padding-top: 10vh;
+}
+
+#aguavivaUm {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+#BlackFim {
+    background-color: black;
+    color: white;
+    text-align: center;
+    display: block;
+    border: dashed 2px white;
+    padding-bottom: 10vh;
+}
+
+#aguavivaSprite {
+    background-color: black;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    margin-top: 5vh;
+}
+
+#fimpreto {
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+    border-top: solid 2vh black;
 }
 
 #finalSim {

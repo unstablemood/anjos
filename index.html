@@ -19,9 +19,13 @@
         <source src = "Sons/chuvaLongo (2).mp3" type = "audio/mpeg"> 
     </audio>
 
+    <audio id = "choveChuva">
+        <source src = "Sons/choveChuvaMsc.mp3" type = "audio/mpeg"> 
+    </audio>
+
     <section class = "sect" id = "entrada" onclick="irCinza()" onkeydown="irCinza()">
         <p class = "texto" id = "textoEntrada">  Clique em qualquer lugar para prosseguir. </p>
-        <p class = "texto" id = "textoEntrada1"> Ou pressione TAB e ⬇</p>
+        <p class = "texto" id = "textoEntrada1"> E pressione ⬇</p>
     </section>
     <section class = "sect" id = "cinza">
         <div id = "quadro1"> 
@@ -66,9 +70,19 @@ inacessível.
         <div id = "quadroCavalos">
            <p class = "cavalos"> Às 4 da tarde em que já tinha desistido, 
 <span> Em algum lugar do meu sono e consciência, </span>
-<span> Achei cavalos, na minha mente.</span>  Azuis e negros. </p>
-        </div>
+<img src = "Cavalos2Transparente.png" id = "cavaloSegundo" class = "todososcavalos">  
+
+<p> Achei cavalos, na minha mente.</p>
+
+<img src = "Cavalos1Transparente.png" id = "cavaloPrimeiro" class = "todososcavalos">
+Azuis e negros. </p>
+<div>
+    </div>
+<img src = "Cavalos4Transparente.png" id = "cavaloTerceiro" class = "todososcavalos">  
+</div>
      </section>
+     <div id = "transicao"></div>
+     <div id = "transicaoDois"></div>
     <section class = "sect" id = "azul">
         - Isa 
 - Eu já rompi o joelho, a ligação, uma vez.
@@ -118,16 +132,27 @@ ao mesmo tempo.
     <button onclick = "irLuz()"> Não </button>
 </section>
 <section class = "sect" id="Black">
-    Eu penso em perguntar para o meu amigo, que faz Bio
+    <p>Eu penso em perguntar para o meu amigo, que faz Bio
     Por que a água viva
     vive pra sempre*
     Por que a água viva
     Se regenera
     E o que ela pensa
-    Mas não pergunto nada.
-
-[Água viva por sobre prédios.]
+    Mas não pergunto nada.</p>
 </section>
+
+<div><img src = "aguavivaInteira.svg" id = "aguavivaUm"></div>
+<section class = "sect" id = "BlackFim">
+    <p> Nâo mando nenhuma mensagem </p>
+    <img src = "Sprites/SPRITEAGUAVIVA.png" id = "aguavivaSprite">
+    <p id = "mensagemFinal" onclick = "rolaretocar()"> Enviar mensagem? </p>
+</section>
+    <section>
+        <img src = "Telhadinho.svg" id = "fimpreto" onmouseenter="encerramentoChuva()" onmouseleave = "chegaChuva()">
+    </section>
+    <footer id = "FimDois">
+        Esse trabalho etc.
+    </footer>
 <section class = "sect" = id = "luz">
     [Não]
 Então eu vou contar algo só pra você.
@@ -158,6 +183,14 @@ var x = document.getElementById("chuvaUm");
   function pauseChuva() { 
     x.pause(); 
     }
+var y = document. getElementById("choveChuva");
+function encerramentoChuva() {
+    y.play();
+}
+function chegaChuva(){
+    y.pause();
+    $("").hide();
+}
 </script>
 <footer id = final> fazer tamanho 25-30vh, width100  </footer> //fazer função if hover footer visível  e tocar música
 </body>

@@ -46,6 +46,11 @@ var x = document.getElementById("chuva");
 
     }
 
+    function rolaretocar(){
+        const aguaviva = document.getElementById('fimpreto');
+        aguaviva.scrollIntoView();
+    }
+
 const chuva = document.getElementById('quadro1');
 const frameQuadrado =  new Image();
 
