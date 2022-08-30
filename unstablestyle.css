@@ -5,6 +5,9 @@
 html {
    scroll-behavior: smooth;
 }
+
+body {overflow: x hidden};
+
 :root {
     --bg-color: rgb(240, 234, 226);
     //--tamanho-do-texto: 20rem;
@@ -41,7 +44,6 @@ html {
 }
 
 #textoEntrada, #textoEntrada1 {
-    color:rgb(184, 178, 207);
     display: inline-block; 
     animation-name: instruc;
     animation-duration: 3s;
@@ -58,36 +60,40 @@ html {
     }
 }
 
+#quarto {
+    background-color: rgb(0, 0, 0);
+    border: solid 3px pink;
+    display: flex;
+    color: white;
+    margin: 0 auto;
+    justify-content: center;
 }
 
+#primeiraPergunta {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    animation: instruc;
+    animation-duration: 3s;
+}
+
+#caixadetexto {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    animation: instruc;
+    animation-duration: 3s;
+}
 
 #quadro2 {
     margin: auto;
     width: 50%;
-    height: 100vh;
+    height: 35vh;
     display: inline-block;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    border:rgba(62, 61, 66, 0.637) 1px dashed;
-}
-
-.botao {
-    background-color: none;
-    border-radius: 25%;
-    padding-left: 40px;
-    padding-right: 40px;
-    justify-content: center;
-    justify-items: center;
-    box-shadow: 2px rgb(62, 61, 66);
-    //font-weight: bold;
-    font-size: 3rem;
-    color: rgb(184, 178, 207);
-    cursor: pointer;
-    margin-top: 50px;
-    display: inline-block;
-    margin-left: auto;
-    margin-right: auto;
+    border:rgba(62, 61, 66, 0.637) 4px dashed;
 }
 
 #cinza {
@@ -108,6 +114,7 @@ html {
     width: 98%;
     display: flex;
     margin: 0 auto;
+    background-color: whitesmoke;
 }
 
 #quartoDois {
@@ -119,6 +126,15 @@ html {
 
 #tubarao {
     background-color: rgb(215, 224, 236);
+    width: 100%;
+}
+
+#primeiraFrase {
+    color: rgb(77, 76, 80);
+}
+
+#primeiraFrase:hover {
+    font-size: 26px;
 }
 
 #ceu1 {
@@ -224,6 +240,26 @@ background-color: rgb(243, 226, 229);
     margin: 0 auto;
 }
 
+#caixaDoPeixe {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+}
+
+#caixaDoPeixe:hover {
+    opacity: 0.25;
+}
+
+#caixaDoPeixeDois {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+}
+
+#caixaDoPeixeDois:hover {
+    opacity: 0.25;
+}
+
 .cozinhadivUm {
     border: dashed 4px burlywood;
 }
@@ -273,17 +309,30 @@ background-color: rgb(243, 226, 229);
 }
 
 #finalSim {
-    background-color: aqua;
-    padding-top: 1000px;
+    background-color: plum;
+    justify-content: center;
+}
+
+#rascunhoMaos {
+    width: 45%;
+    height: 500px;
+    display: flex;
 }
 
 #finalNao {
     background-color: aqua;
+    padding: 35vh;
+    justify-content: center;
 }
 
+
+
 #maosLuz {
-    width: 85%;
-    height: 0 auto;
+    width: 45%;
+    height: 500px;
+    border: dotted 4px white;
+    margin: 0 auto;
+    display: flexbox;
 }
 
 footer{

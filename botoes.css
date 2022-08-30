@@ -1,0 +1,66 @@
+.botoes {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(236, 236, 236);
+    justify-content: center;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+    padding-bottom: 10vh;
+    padding-top: 10vh;
+}
+
+.botoes2 {
+
+}
+
+.botao {
+    font-family: monospace;
+    background-color: whitesmoke;
+    COLOR: black;
+    max-width: 100%;
+    border: none;
+    border-right: dashed 5px black;
+    width: 45%;
+    height: 40vh;
+    border-radius: 10%;
+    font-size: 5rem;
+    cursor: pointer;
+    font-size: 3rem;
+  }
+
+  #opcao1 {
+    color:  rgb(168, 167, 168);
+  }
+
+  .botao:hover {
+    border: none;
+    background-color: white;
+    font-size: 5rem;
+    width: 50%;
+    border-bottom: solid 5px lightgray;
+    color: rgb(61, 61, 83);
+    border-right: dashed 5px black;
+  }
+
+#opcao1:hover {
+    color:black;
+}
+
+  #opcao2:hover {
+    background-color: black;
+  }
+
+  #voltar {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 50%;
+    height: 25vh;
+    border-radius: 10%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+  }
+  #voltar:hover {
+    font-size: 3rem;
+  }

@@ -7,6 +7,7 @@
     <title>Início</title>
     <link rel ="stylesheet" href = "unstablestyle.css">
     <link rel ="stylesheet" href = "anjostyle.css">
+    <link rel = "stylesheet" href = "botoes.css">
     <script src = "jquery-3.6.0.min.js"></script>
     <script src = "anjostyle.js"></script>
 </head>
@@ -23,6 +24,10 @@
         <source src = "Sons/choveChuvaMsc.mp3" type = "audio/mpeg"> 
     </audio>
 
+    <audio id = "tempoPerdido">
+        <source src = "Sons/tempoPerdido.mp3" type = "audio/mpeg">
+    </audio>
+
     <section class = "sect" id = "entrada" onclick="irCinza()" onkeydown="irCinza()">
         <p class = "texto" id = "textoEntrada">  Clique em qualquer lugar para prosseguir. </p>
         <p class = "texto" id = "textoEntrada1"> E pressione ⬇ pra descer. </p>
@@ -30,18 +35,17 @@
     <section class = "sect" id = "cinza">
         <div id = "quadro1"> 
             <img src = "ceuUm.svg" id = "fundo1">
-            <span>Quis desenhar tubarões, hoje</span>
+            <span id = "primeiraFrase">Quis desenhar tubarões, hoje</span>
             <IMG src = "tubarao2SVG.svg" id = "tubarao">
             <img src = "FUNDOS.svg" id = "ceu1">
         </div>
     </section>
     <section class = "sect" id = "cinza2"> 
         <div id = "quadro2">
-
+            <p id = "caixadetexto">- Onde eu moro, a escada de madeira apodreceu. </p>
         </div>
     </section>
     <section class = "sect" id = "cinza3"> 
-        <p>- Onde eu moro, a escada de madeira apodreceu. </p>
         <img src = "casa.png" id = "casaChove">
     </section>
     <p>- Foi em Fevereiro, que a chuva de verão causou os desabamentos.</p>
@@ -49,23 +53,26 @@
 <p>- Por 3 dias, ninguém conseguia entrar ou sair, por trem.</p>
 
 <p>- Eu soube pelo celular que a cidade estava inundada,</p>
-inacessível.
+<p>inacessível.</p>
 
 <p>- E então eu dormi.</p>
 
     <section class = "sect" id = "somUm">
         <p class = "voceQuer" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
+    </section>
+    <div class = "botoes">
         <button id = "opcao1" class = "botao" onmouseenter = "playChuva()"> SIM </button>
         <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()" onclick="irSemchuva()""> NÃO </button>
-    </section>
-    <section class = "sect" id = "morro">
+    </div>
         <img src = "FUNDO2.svg" id = "fundoDois">
-        </section>
-    
+    <section id = "quartoSect">
     <p> - por três dias. </p>
         <div id = "quadro3"></div>
         <img src = "Janela.png" id = "quarto">
+    </section>
+        <div class = "botoes2">
         <button class = "botao" id = "voltar" onclick = "voltarPrimeira()"> Volte, se puder. </button>
+    </div>
     </section>
     <section class = "sect" id = "cinza5">
         <div id = "quadroCavalos">
@@ -95,10 +102,10 @@ De ser uma baleia tão grande
 Que engole toda a água
 Do Oceano
 (tcc, escritório) </section>
-Eu deveria estar fazendo meu TCC, mas passei meu tempo
-Googleando "Ancestrais de todos os peixes
-De todos
-Os peixes"
+
+<p id = "caixaDoPeixe">Eu deveria estar fazendo meu TCC, mas passei meu tempo
+Googleando "Ancestrais de todos os peixes</p>
+<p id = "caixaDoPeixeDois">De todos Os peixes"</p>
 <section class = "cozinha" id = "cozinhadivUm">
 <img src = "pia da cozinha.png">
     - Você tá tirando foto da cozinha?
@@ -159,8 +166,12 @@ Conseguiria ver seus ossos por baixo da pele
     Se mentiu, não foi por mal.
 </section>
 <section id = "finalNao">
+    <div id = "containerFinal">
     <img src = "ImagemFinalLuz.png" id = "maosLuz">
-    Então dá pra ver mesmo, não é?
+</div>
+<div>
+    <p>Então dá pra ver mesmo, não é?</p>
+</div>
 </section>
 <script>
 var x = document.getElementById("chuvaUm");
