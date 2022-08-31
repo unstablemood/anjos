@@ -345,6 +345,12 @@ body {
     color:rgb(157, 150, 185);
     animation: dialogo linear;
     animation-duration: 5s;
+    text-align: center;
+}
+
+#comtia {
+    display: block;
+    margin: 0 auto;
 }
 
 #caixadetextoCozinha:hover {
@@ -370,6 +376,8 @@ body {
 #fragil {
     display: flex;
     margin: 0 auto;
+    margin-top: 20vh;
+    margin-bottom: 10vh;
 }
 
 #Black {
@@ -443,11 +451,32 @@ body {
     display: flexbox;
 }
 
+#luz {
+    border: dotted 4px white;
+    margin: 0 auto;
+    display: flexbox;
+}
+
 #elementiuSim {
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
 
+}
+
+#segundaPergunta {
+    font-size: 5rem;
+    text-align: center;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    margin-bottom: 30vh;
+    margin-top:  30vh;
+    display: flex;
+    margin: 0 auto;
+}
+
+#escolhaFinal {
+    display: block;
 }
 
 #finalUltimo{ 
