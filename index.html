@@ -13,19 +13,19 @@
 </head>
 <body>
     <audio id = "chuvaUm">
-        <source src = "Sons/chuvaCurto.mp3" type = "audio/mpeg">
+        <source src = "Sons/chuvaCurto.mp3" type = "audio/mpeg"> // Áudio de autoria própria;
     </audio>
 
     <audio id = "chuvaDois">
-        <source src = "Sons/chuvaLongo (2).mp3" type = "audio/mpeg"> 
+        <source src = "Sons/chuvaLongo (2).mp3" type = "audio/mpeg"> //Áudio de autoria própria;
     </audio>
 
     <audio id = "choveChuva">
-        <source src = "Sons/choveChuvaMsc.mp3" type = "audio/mpeg"> 
+        <source src = "Sons/choveChuvaMsc.mp3" type = "audio/mpeg"> //Áudio remixado de Jorge Ben Jor, pelo DJ "saib.".
     </audio>
 
     <audio id = "tempoPerdido">
-        <source src = "Sons/tempoPerdido.mp3" type = "audio/mpeg">
+        <source src = "Sons/tempoPerdido.mp3" type = "audio/mpeg"> //Áudio remixado de SΔ†IERF.
     </audio>
 
     <section class = "sect" id = "entrada" onclick="irCinza()" onkeydown="irCinza()">
@@ -47,7 +47,7 @@
     </section>
     <section class = "sect" id = "cinza3"> 
         <img src = "casa.png" id = "casaChove">
-    </section>
+    </section id = "desabamento">
     <p>- Foi em Fevereiro, que a chuva de verão causou os desabamentos.</p>
     <img src = "FUNDO2.svg" id ="fundoDoisPequeno">
 <p>- Por 3 dias, ninguém conseguia entrar ou sair, por trem.</p>
@@ -61,14 +61,18 @@
         <p class = "voceQuer" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
     </section>
     <div class = "botoes">
-        <button id = "opcao1" class = "botao" onmouseenter = "playChuva()"> SIM </button>
-        <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()" onclick="irSemchuva()""> NÃO </button>
+        <button id = "opcao1" class = "botao" onmouseenter = "playChuva()" onclick="irComchuva()"> SIM </button>
+        <button id = "opcao2" class = "botao" onmouseenter = "pauseChuva()" onclick="irSemchuva()"> NÃO </button>
     </div>
+        <section id = "rolagem">
         <img src = "FUNDO2.svg" id = "fundoDois">
+        </section>s
+    </section>
     <section id = "quartoSect">
     <p> - por três dias. </p>
-        <div id = "quadro3"></div>
+        <div id = "quadroQuarto">
         <img src = "Janela.png" id = "quarto">
+    </div>
     </section>
         <div class = "botoes2">
         <button class = "botao" id = "voltar" onclick = "voltarPrimeira()"> Volte, se puder. </button>
@@ -120,8 +124,8 @@ ao mesmo tempo.
 </section>
 <section class = "sect" id= "escolhaFinal">
     - Hoje chove?
-    <button onclick = "irBlack()" onmouseenter="chuvaLonga()"> Sim </button>
-    <button onclick = "irLuz()"> Não </button>
+    <button class = "botao" onclick = "irBlack()" onmouseenter="chuvaLonga()"> Sim </button>
+    <button class = "botao" onclick = "irLuz()"> Não </button>
 </section>
 <section class = "sect" id="Black">
     <p>Eu penso em perguntar para o meu amigo, que faz Bio
@@ -137,7 +141,7 @@ ao mesmo tempo.
 <section class = "sect" id = "BlackFim">
     <p> Nâo mando nenhuma mensagem </p>
     <img src = "Sprites/SPRITEAGUAVIVA.png" id = "aguavivaSprite">
-    <p id = "mensagemFinal" onclick = "rolaretocar()"> Enviar mensagem? </p>
+    <button id = "mensagemFinal" class = "botao" onclick = "rolaretocar()"> Enviar mensagem? </button>
 </section>
     <section>
         <img src = "Telhadinho.svg" id = "fimpreto" onmouseenter="encerramentoChuva()" onmouseleave = "chegaChuva()">
@@ -158,19 +162,19 @@ Conseguiria ver seus ossos por baixo da pele
 </section>
 <section id = "opcaoDois">
     <h2 id = "inquisicaoDois">Ele mentiu?</h2>
-    <button onmouseenter = "imagemSim()"> sim </button>
-    <button onmouseenter = "imagemNao()"> não </button>
+    <button class = "botao" onmouseenter = "imagemSim()"> sim </button>
+    <button class = "botao" onmouseenter = "imagemNao()"> não </button>
 </section>
 <section id = "finalSim">
     <img src = "ImagemFinal.png" id = "rascunhoMaos">
-    Se mentiu, não foi por mal.
+    <p id = "elementiuSim">Se mentiu, não foi por mal.</p>
 </section>
 <section id = "finalNao">
     <div id = "containerFinal">
     <img src = "ImagemFinalLuz.png" id = "maosLuz">
 </div>
 <div>
-    <p>Então dá pra ver mesmo, não é?</p>
+    <p id = "elementiuNao">Então dá pra ver mesmo, não é?</p>
 </div>
 </section>
 <script>
@@ -190,6 +194,6 @@ function chegaChuva(){
     $("").hide();
 }
 </script>
-<footer id = final> fazer tamanho 25-30vh, width100  </footer> //fazer função if hover footer visível  e tocar música
+<footer id = "finalUltimo">  </footer> //fazer função if hover footer visível  e tocar música
 </body>
 </html>

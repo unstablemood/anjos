@@ -9,6 +9,11 @@ function voltarPrimeira(){
     volto.scrollIntoView();
 }
 
+function irComchuva() {
+    const ircom = document.getElementById('fundoDois');
+    ircom.scrollIntoView();
+}
+
 function irSemchuva() {
     const irsem = document.getElementById('quadroCavalos');
     irsem.scrollIntoView();
@@ -24,7 +29,7 @@ var x = document.getElementById("chuva");
     }
 
     function imagemSim(){
-        const parafinal = document.getElementById('finalSim');
+        const parafinal = document.getElementById('rascunhoMaos');
         parafinal.scrollIntoView();
     }
 
