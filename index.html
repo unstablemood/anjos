@@ -48,14 +48,24 @@
     <section class = "sect" id = "cinza3"> 
         <img src = "casa.png" id = "casaChove">
     </section id = "desabamento">
-    <p>- Foi em Fevereiro, que a chuva de verão causou os desabamentos.</p>
-    <img src = "FUNDO2.svg" id ="fundoDoisPequeno">
-<p>- Por 3 dias, ninguém conseguia entrar ou sair, por trem.</p>
+    <p class = "narracao">- Foi em Fevereiro, que a chuva de verão causou os desabamentos.</p>
+    
+    <div>
+    <img src = "Deslize1.svg" class = "cortes" id ="fundoDoisPequeno">
+    <img src = "tubaCortado.svg" class = "cortes">
+    <img src = "Deslize2.svg" class = "cortes">
+    <img src = "tubaCortado2.svg" class = "cortes">
+    <img src = "Deslize3.svg" class = "cortes">
+    <img src = "tubaCortado3.svg" class = "cortes">
+    <img src = "Deslize4.svg" class = "cortes">
+    <img src = "tubaCortado4.svg" class = "cortes">
+    </div>
 
-<p>- Eu soube pelo celular que a cidade estava inundada,</p>
-<p>inacessível.</p>
+<p  class = "narracao">- Por 3 dias, ninguém conseguia entrar ou sair, por trem.</p>
+<p class = "narracao">- Eu soube pelo celular que a cidade estava inundada,</p>
+<p class = "narracao">inacessível.</p>
 
-<p>- E então eu dormi.</p>
+<p class = "corte">- E então eu dormi.</p>
 
     <section class = "sect" id = "somUm">
         <p class = "voceQuer" id = "primeiraPergunta"> Você quer ouvir o som da chuva na minha cidade?</p>
@@ -69,7 +79,7 @@
         </section>s
     </section>
     <section id = "quartoSect">
-    <p> - por três dias. </p>
+    <p class = "corte"> - por três dias. </p>
         <div id = "quadroQuarto">
         <img src = "Janela.png" id = "quarto">
     </div>
@@ -84,10 +94,10 @@
 <span> Em algum lugar do meu sono e consciência, </span>
 <img src = "Cavalos2Transparente.png" id = "cavaloSegundo" class = "todososcavalos">  
 
-<p> Achei cavalos, na minha mente.</p>
+<p class = "corte"> Achei cavalos, na minha mente.</p>
 
 <img src = "Cavalos1Transparente.png" id = "cavaloPrimeiro" class = "todososcavalos">
-<p> Azuis e negros.</p>
+<p class = "corte"> Azuis e negros.</p>
 <div>
     </div>
 <img src = "Cavalos4Transparente.png" id = "cavaloTerceiro" class = "todososcavalos">  
@@ -99,28 +109,28 @@
     <section class = "sect" id = "azul">
     <img src = "ligamentoPagina.png" id = "ligamentoAzul">
     </section>
-    <section class = "sect" id = "azul2">
-        (cena)
-Eu gostaria 
-De ser uma baleia tão grande
-Que engole toda a água
-Do Oceano
-(tcc, escritório) </section>
-
+<section id = "peixes">
 <p id = "caixaDoPeixe">Eu deveria estar fazendo meu TCC, mas passei meu tempo
 Googleando "Ancestrais de todos os peixes</p>
-<p id = "caixaDoPeixeDois">De todos Os peixes"</p>
-<section class = "cozinha" id = "cozinhadivUm">
-<img src = "pia da cozinha.png">
-    - Você tá tirando foto da cozinha?
-- Sim.
-- Bom, cada louco com sua loucura.
-- Bem... Loucura pode te levar bem longe.
-- Toma cuidado pra não ir longe demais.
-- ... A gente não te alcança, aí.
-- ... Daí fica difícil conseguir voltar. - minha vó murmura,
-ao mesmo tempo.
-<img src = "pia da cozinha com tia.png">
+<p id = "caixaDoPeixeDois">De todos os peixes"</p>
+</section>
+
+<section class = "cozinha">
+    <div id = "caixadacozinha">
+<img src = "pia da cozinha.png" id = "fragil">
+    </div>
+<p class = "narracaoDois">- Você tá tirando foto da cozinha? </p>
+<div id = "caixadetextoCozinha">
+<p>- Sim.</p>
+<p>- Bom, cada louco com sua loucura.</p>
+<p>- Bem... Loucura pode te levar bem longe. </p>
+<p>- Toma cuidado pra não ir longe demais. </p>
+<p>- ... A gente não te alcança, aí. </p>
+<p>- ... Daí fica difícil conseguir voltar. - minha vó murmura, </p>
+ao mesmo tempo.</div>
+<div id = "caixadacozinhaTia">
+<img src = "pia da cozinha com tia.png" id = "comtia">
+</div>
 </section>
 <section class = "sect" id= "escolhaFinal">
     - Hoje chove?
@@ -171,7 +181,7 @@ Conseguiria ver seus ossos por baixo da pele
 </section>
 <section id = "finalNao">
     <div id = "containerFinal">
-    <img src = "ImagemFinalLuz.png" id = "maosLuz">
+    <img src = "ImagemFinalLuz.png" id = "maosLuz" onmouseenter = "tempoPerdido()">
 </div>
 <div>
     <p id = "elementiuNao">Então dá pra ver mesmo, não é?</p>

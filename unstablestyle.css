@@ -81,20 +81,39 @@ body {overflow: x hidden};
     font-size: 3rem;
     font-weight: lighter;
     color:rgb(184, 178, 207);
-    animation: instruc;
+    animation-name: instruc;
     animation-duration: 3s;
 }
 
 #caixadetexto:hover {
     animation: xis linear;
-    animation-duration: 4s;
+    animation-duration: 5s;
 }
 
 @keyframes xis {
-    from {opacity: 1}
-} to {opacity: 0}
+    from {opacity: 0}
+} to {opacity: 1}
+
+.narracao {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    color:rgb(142, 137, 163);
+    max-width: 100%;
+    width:45vw;
+    height: auto;
+}
+
+.corte {
+    padding: 2vh;
+    background-color: black;
+    color:rgb(184, 178, 207);
+    text-align: center;
+}
 
 #quadro2 {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
     margin: auto;
     width: 50%;
     height: 35vh;
@@ -107,6 +126,18 @@ body {overflow: x hidden};
 
 #cinza {
     background-color: var(--bg-color);
+}
+
+.cortes {
+    border-left: 2px black;
+    margin-top: 2vh;
+    width: 90%;
+    height: auto;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    animation: instruc;
+    animation-duration: 3s;
 }
 
 #quadro1 {
@@ -203,16 +234,17 @@ background-color: rgb(243, 226, 229);
     height: 80px;
     margin: 0 auto;
     border-radius: 45%;
-    margin-top: 10px;
+    margin-top: 10vh;
 }
 
 #transicaoDois {
-    margin-top: 10px;
+    margin-top: 10vh;
     background-color: rgb(203, 208, 231) ;
     width: 30%;
     height: 50px;
     margin: 0 auto;
     border-radius: 50%;
+    margin-bottom: 5vh;
 
 }
 
@@ -249,25 +281,71 @@ background-color: rgb(243, 226, 229);
     font-size: 3rem;
     font-weight: lighter;
     color:rgb(184, 178, 207);
+    opacity: 0.25;
 }
 
 #caixaDoPeixe:hover {
-    opacity: 0.25;
+    opacity: 0.85;
 }
 
 #caixaDoPeixeDois {
+    width: auto;
+    height: auto;
+    margin: 0 auto;
     font-size: 3rem;
     font-weight: lighter;
     color:rgb(184, 178, 207);
-}
-
-#caixaDoPeixeDois:hover {
     opacity: 0.25;
 }
 
-.cozinhadivUm {
-    border: dashed 4px burlywood;
+#caixaDoPeixeDois:hover {
+    opacity: 0.85;
 }
+
+.cozinha {
+    border: dotted 2px lightblue;
+    justify-content: center;
+    margin-top: 40vh;
+    display: flex;
+}
+
+#caixadacozinha{
+
+}
+
+#caixadetextoCozinha {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    animation: dialogo linear;
+    animation-duration: 5s;
+}
+
+#caixadetextoCozinha:hover {
+    opacity: 1;
+}
+
+@keyframes dialogo {
+    from {opacity: 0.5;}
+    to {opacity: 1}
+}
+
+.narracaoDois {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+    color:rgb(142, 137, 163);
+    max-width: 100%;
+    width:45vw;
+    height: auto;
+    display: flex;
+}
+
+#fragil {
+    display: flex;
+    margin: 0 auto;
+}
+
 #Black {
     margin-top: 250px;
     color: white;

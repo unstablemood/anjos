@@ -56,6 +56,10 @@ var x = document.getElementById("chuva");
         aguaviva.scrollIntoView();
     }
 
+    function tempoPerdido() {
+        
+    }
+
 const chuva = document.getElementById('quadro1');
 const frameQuadrado =  new Image();
 
