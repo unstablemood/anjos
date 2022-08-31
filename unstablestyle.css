@@ -81,13 +81,14 @@ body {overflow: x hidden};
     font-size: 3rem;
     font-weight: lighter;
     color:rgb(184, 178, 207);
-    animation-name: instruc;
-    animation-duration: 3s;
+    opacity: 0.25;
+    animation-name: xis;
+    animation-duration: 2s linear;
 }
 
 #caixadetexto:hover {
     animation: xis linear;
-    animation-duration: 5s;
+    opacity: 1;
 }
 
 @keyframes xis {
@@ -221,7 +222,7 @@ body {
 }
 
 #cavaloPrimeiro {
-background-color: rgb(243, 226, 229);
+    background-color: rgb(243, 226, 229);
 }
 
 #cavaloTerceiro {
@@ -235,12 +236,25 @@ background-color: rgb(243, 226, 229);
     margin: 0 auto;
     border-radius: 45%;
     margin-top: 10vh;
+    margin-bottom: 50px;
 }
 
 #transicaoDois {
     margin-top: 10vh;
     background-color: rgb(203, 208, 231) ;
     width: 30%;
+    height: 50px;
+    margin: 0 auto;
+    border-radius: 50%;
+    margin-bottom: 5vh;
+
+}
+
+
+#transicaoTres {
+    margin-top: 10vh;
+    background-color: rgb(203, 208, 231) ;
+    width: 20%;
     height: 50px;
     margin: 0 auto;
     border-radius: 50%;
@@ -263,6 +277,19 @@ background-color: rgb(243, 226, 229);
     height: auto;
     display: flex;
 }
+
+#narracaoAguaViva {
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    animation: instruc;
+    animation-duration: 3s;
+}
+    font-size: 3rem;
+    font-weight: lighter;
+    color:rgb(184, 178, 207);
+    animation: instruc;
+    animation-duration: 3s;
 
 #sensacaoedor {
     padding-top: 50px;
@@ -304,7 +331,6 @@ background-color: rgb(243, 226, 229);
 
 .cozinha {
     border: dotted 2px lightblue;
-    justify-content: center;
     margin-top: 40vh;
     display: flex;
 }
@@ -314,9 +340,9 @@ background-color: rgb(243, 226, 229);
 }
 
 #caixadetextoCozinha {
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: lighter;
-    color:rgb(184, 178, 207);
+    color:rgb(157, 150, 185);
     animation: dialogo linear;
     animation-duration: 5s;
 }
